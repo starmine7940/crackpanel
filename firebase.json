@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "crackpanel-3413c",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

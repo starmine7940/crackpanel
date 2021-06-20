@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>crackpanel</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div id="header">
+            <button type="submit" id="home">HOME</button>
+            <p>※トップページに戻るにはHOMEボタンを押してください。この画面でブラウザバックやリロード、ウィンドウを閉じることはしないでください。
+        </div>
+
+        <div id="page1">
+            <h3>crackpanelへようこそ！ルームIDとハンドルネームを入力してください。</h3>
+            <p>ルームID</p>
+            <input type="text" id="roomid">
+            <p>ハンドルネーム</p>
+            <input type="text" id="name">
+            <br><br><button type="submit" id="submitbutton">送信</button>
+        </div>
+
+        <div id="page2">
+            <h3>スタートボタンを押すとゲームを開始します。</h3>
+            <h3>---ゲーム参加者---</h3>
+            <p id="playerlist"></p>
+            <button type="submit" id="startbutton">スタート</button>
+        </div>
+        
+        <div id="page3">
+            <div class="player">
+                <h2>自分: <span id="myname"></span></h2>
+                <h2>現在のターン: <span id="nowplayer"></span></h2>
+            </div>
+            <div class="panels">
+                <div class="panel" id="00"></div>
+                <div class="panel" id="01"></div>
+                <div class="panel" id="02"></div>
+                <div class="panel" id="03"></div>
+                <br>
+                <div class="panel" id="10"></div>
+                <div class="panel" id="11"></div>
+                <div class="panel" id="12"></div>
+                <div class="panel" id="13"></div>
+                <br>
+                <div class="panel" id="20"></div>
+                <div class="panel" id="21"></div>
+                <div class="panel" id="22"></div>
+                <div class="panel" id="23"></div>
+                <br>
+                <div class="panel" id="30"></div>
+                <div class="panel" id="31"></div>
+                <div class="panel" id="32"></div>
+                <div class="panel" id="33"></div>
+                <br>
+            </div>
+            <div class="results">
+                <h2>結果</h2>
+                <h3 id="failed"></h3>
+            </div>
+        </div>
+
+        <div id="discription">
+            <h2>ルール説明</h2>
+            <ul>
+                <li>このゲームは、2〜4人用のオンライン対戦ゲームです。</li>
+                <li>プレイヤーが移動する中でパネルにダメージを与え、パネルが壊れて落下したら負けです。各パネルには最初HPが3あり、ダメージを受けてHPが2になると黄色、1になると赤、0になると黒になります。パネルのHPが0になると壊れて落下します。</li>
+                <li>上下左右に他のプレイヤーがいない場合、そこに移動できます。その際、パネルに1ダメージが入ります。</li>
+                <li>上下左右に他のプレイヤーがいて、その1つ先のパネルにプレイヤーがいない場合、プレイヤーを飛び越えてそこにジャンプできます。その際、パネルに1ダメージが入ります。</li>
+                <li>順番に移動ターンを繰り返し、落下せず最後まで生き残ったプレイヤーの勝利です。</li>
+            </ul>
+            <div id="gamescene">
+                <image src="gamescene.png">
+            </div>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+        <script src="app.js" type="module"></script>
+    </body>
+</html>
