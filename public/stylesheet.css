@@ -1,39 +1,66 @@
-#header {
-    display: none;
+/* 全体 */
+body {
+    background-color: #D3DEF1;
+	color: #203864;
     text-align: center;
-    margin-top: 30px;
-    color: red; 
 }
 
+.wrapper {
+    background-color: #ffffff;
+	width: 95%;
+    padding: 1% 3% 3% 3%;
+    margin: 1% auto;
+	border-radius: 20px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.6;
+}  
+
+.red_letter {
+    color: #fa8072;
+}
+
+/* header */
+#header {
+    display: none; 
+}
+
+#home {
+    background-color: #fa8072;
+    width: 150px;
+    height: 50px;
+    font-size: large;
+}
+
+/* page1 */
 #page1 {
     /* display: none; */
-    text-align: center;
-    margin-top: 30px;
-    border-top: solid;
 }
 
+/* page2 */
 #page2 {
     display: none;
-    text-align: center;
-    margin-top: 30px;
-    border-top: solid;
 }
 
+/* page3 */
 #page3 {
     display: none;
-    border-top: solid;
 }
 
 .player {
     display: block;
-    text-align: center;
-    /* margin-top: 30px; */
 }
 
 .panels {
-    text-align: center;
-    border-top: solid;
-    background-color: lavender;
+    background-color: #203864;
     padding: 10px 10px;
 }
 
@@ -43,30 +70,21 @@
     margin: 5px 5px;
     display: inline-block;
     line-height: 50px;
-    /* background-color: white; */
     border: 1px solid;
+    border-radius: 5px;
 }
+
+.panel:hover {
+    opacity: 0.6;
+}  
 
 .results {
-    height: 200px;
     display: block;
-    text-align: center;
-    border-top: solid;
-    /* margin-top: 30px; */
 }
 
-#discription {
-    border-top: solid;
-    margin-top: 30px;
-}
-
-#discription h2{
-    margin-top: 30px;
-    text-align: center;
-}
-
-#gamescene {
-    text-align: center;
+/* discription */
+#discription ul {
+    text-align: left;
 }
 
 #gamescene img{

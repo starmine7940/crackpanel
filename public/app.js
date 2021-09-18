@@ -167,7 +167,7 @@ function paneldraw(){
             }else if(panelmap[i][j] == 2){
                 obj.style.backgroundColor = 'yellow';
             }else if(panelmap[i][j] == 1){
-                obj.style.backgroundColor = 'red';
+                obj.style.backgroundColor = 'salmon';
             }else if(panelmap[i][j] == 0){
                 obj.style.backgroundColor = 'gray';
             }
