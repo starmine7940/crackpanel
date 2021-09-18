@@ -9,9 +9,9 @@
 https://crackpanel-3413c.web.app/
 
 <div align="center">
-    <img src="demo1.png" width=80%>
+    <img src="demo1.PNG" width=80%>
 </div>
 
 <div align="center">
-    <img src="demo2.png" width=60%>
+    <img src="demo2.PNG" width=60%>
 </div>
