@@ -72,6 +72,7 @@ button:hover {
     line-height: 50px;
     border: 1px solid;
     border-radius: 5px;
+    font-size: 25px;
 }
 
 .panel:hover {
@@ -90,4 +91,5 @@ button:hover {
 #gamescene img{
     width: 50%;
     height: 50%;
+    border: solid 1px;
 }
